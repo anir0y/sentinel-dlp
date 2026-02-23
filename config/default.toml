@@ -1,0 +1,43 @@
+[usb]
+block_mass_storage = false
+whitelist_enabled = false
+
+[[usb.whitelist]]
+vendor_id = "0781"
+product_id = "5583"
+label = "SanDisk Ultra (example)"
+
+[programs]
+enabled = false
+blocked_paths = []
+
+[monitoring]
+poll_interval_seconds = 2.0
+hotplug_poll_interval_seconds = 3.0
+max_rollback_entries = 100
+
+[notifications]
+enabled = false
+on_ducky_detected = true
+on_blocked_usb_inserted = true
+
+[network]
+enabled = false
+upload_threshold_mb = 100.0
+check_interval_seconds = 5.0
+
+[clipboard]
+enabled = false
+patterns = []
+
+[file_activity]
+enabled = false
+watch_external_volumes = true
+bulk_copy_threshold_files = 50
+check_interval_seconds = 5.0
+
+[bluetooth]
+enabled = false
+
+[logging]
+level = "WARNING"

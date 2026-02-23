@@ -1,0 +1,36 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "dlp-tui"
+version = "0.1.0"
+description = "Data Loss Prevention TUI for Windows and macOS"
+requires-python = ">=3.10"
+dependencies = [
+    "textual>=1.0.0",
+    "rich",
+    "pydantic>=2.0",
+    "platformdirs",
+    "psutil",
+    "tomli_w",
+]
+
+[project.optional-dependencies]
+windows = ["pywin32", "wmi"]
+dev = [
+    "pytest",
+    "pytest-mock",
+    "pytest-asyncio",
+    "pytest-subprocess",
+]
+
+[project.scripts]
+dlp = "dlp.__main__:main"
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/dlp"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+asyncio_mode = "auto"

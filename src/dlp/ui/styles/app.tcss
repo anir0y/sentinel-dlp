@@ -1,0 +1,151 @@
+/* DLP TUI Application Styles */
+
+Screen {
+    background: $surface;
+}
+
+#status-bar {
+    dock: top;
+    height: 1;
+    background: $primary-darken-3;
+    color: $text;
+    padding: 0 1;
+}
+
+#status-bar .dry-run {
+    color: $warning;
+    text-style: bold;
+}
+
+#status-bar .no-admin {
+    color: $error;
+    text-style: bold;
+}
+
+#status-bar .admin {
+    color: $success;
+}
+
+.dashboard-card {
+    border: round $primary;
+    padding: 1 2;
+    margin: 1;
+    height: auto;
+}
+
+.dashboard-card .card-title {
+    text-style: bold;
+    color: $primary-lighten-2;
+}
+
+.card-value {
+    margin-top: 1;
+}
+
+.feature-container {
+    padding: 1 2;
+}
+
+.section-title {
+    text-style: bold;
+    color: $primary-lighten-2;
+    margin-bottom: 1;
+}
+
+.action-bar {
+    layout: horizontal;
+    height: 3;
+    margin: 1 0;
+}
+
+.action-bar Button {
+    margin: 0 1;
+}
+
+.action-bar Input {
+    width: 1fr;
+    margin: 0 1;
+}
+
+DataTable {
+    margin: 1 0;
+    height: 1fr;
+}
+
+.risk-high {
+    color: $error;
+    text-style: bold;
+}
+
+.risk-medium {
+    color: $warning;
+}
+
+.risk-low {
+    color: $success;
+}
+
+.risk-unknown {
+    color: $text-muted;
+}
+
+.whitelist-form {
+    layout: horizontal;
+    height: 3;
+    margin: 1 0;
+}
+
+.whitelist-form Input {
+    width: 1fr;
+    margin: 0 1;
+}
+
+.log-panel {
+    border: round $primary;
+    padding: 1;
+    margin: 1;
+    height: 1fr;
+}
+
+#confirm-modal {
+    align: center middle;
+}
+
+#confirm-modal > Vertical {
+    background: $surface;
+    border: round $error;
+    padding: 2 4;
+    width: 60;
+    height: auto;
+}
+
+.unavailable-message {
+    padding: 2;
+    color: $text-muted;
+    text-style: italic;
+}
+
+/* Network monitor alerts */
+#net-alerts {
+    height: auto;
+    max-height: 15;
+    overflow-y: auto;
+}
+
+/* Bluetooth table */
+#bt-table {
+    height: 1fr;
+    min-height: 5;
+}
+
+/* Audit table */
+#audit-table {
+    height: 1fr;
+    min-height: 8;
+}
+
+/* Rollback table */
+#rollback-table {
+    height: 1fr;
+    min-height: 5;
+}
