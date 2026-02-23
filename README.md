@@ -1,18 +1,18 @@
 <p align="center">
-  <img src="https://raw.githubusercontent.com/anir0y/dlp-tui/main/assets/logo.svg" alt="dlp-tui logo" width="160">
+  <img src="https://raw.githubusercontent.com/anir0y/sentinel-dlp/main/assets/logo.svg" alt="Sentinel DLP logo" width="160">
 </p>
 
-<h1 align="center">dlp-tui</h1>
+<h1 align="center">Sentinel DLP</h1>
 
 <p align="center">
-  <a href="https://pypi.org/project/dlp-tui/"><img src="https://img.shields.io/pypi/v/dlp-tui?color=blue" alt="PyPI"></a>
-  <a href="https://pypi.org/project/dlp-tui/"><img src="https://img.shields.io/pypi/pyversions/dlp-tui" alt="Python"></a>
-  <a href="https://github.com/anir0y/dlp-tui/blob/main/LICENSE"><img src="https://img.shields.io/pypi/l/dlp-tui" alt="License"></a>
+  <a href="https://pypi.org/project/sentinel-dlp/"><img src="https://img.shields.io/pypi/v/sentinel-dlp?color=blue" alt="PyPI"></a>
+  <a href="https://pypi.org/project/sentinel-dlp/"><img src="https://img.shields.io/pypi/pyversions/sentinel-dlp" alt="Python"></a>
+  <a href="https://github.com/anir0y/sentinel-dlp/blob/main/LICENSE"><img src="https://img.shields.io/pypi/l/sentinel-dlp" alt="License"></a>
 </p>
 
 <p align="center">
-A terminal-based Data Loss Prevention (DLP) control panel built with <a href="https://github.com/Textualize/textual">Textual</a>.<br>
-Monitor, restrict, and audit data exfiltration vectors — USB storage, HID devices, network uploads, Bluetooth, clipboard, and file activity — from a single keyboard-driven TUI.
+A terminal-based Data Loss Prevention control panel built with <a href="https://github.com/Textualize/textual">Textual</a>.<br>
+Monitor, restrict, and audit data exfiltration vectors — USB storage, HID devices, network uploads, Bluetooth, clipboard, and file activity — from a single keyboard-driven interface.
 </p>
 
 <p align="center">
@@ -22,22 +22,22 @@ Runs on <strong>macOS</strong>, <strong>Windows</strong>, and <strong>Linux</str
 ## Screenshots
 
 <p align="center">
-  <img src="https://raw.githubusercontent.com/anir0y/dlp-tui/main/assets/dashboard.svg" alt="Dashboard" width="100%">
+  <img src="https://raw.githubusercontent.com/anir0y/sentinel-dlp/main/assets/dashboard.svg" alt="Dashboard" width="100%">
 </p>
 <p align="center"><em>Dashboard — status overview with USB, whitelist, HID, and program policy cards</em></p>
 
 <p align="center">
-  <img src="https://raw.githubusercontent.com/anir0y/dlp-tui/main/assets/usb_manager.svg" alt="USB Manager" width="100%">
+  <img src="https://raw.githubusercontent.com/anir0y/sentinel-dlp/main/assets/usb_manager.svg" alt="USB Manager" width="100%">
 </p>
 <p align="center"><em>USB Manager — block/unblock mass storage, manage device whitelist</em></p>
 
 <p align="center">
-  <img src="https://raw.githubusercontent.com/anir0y/dlp-tui/main/assets/hid_viewer.svg" alt="HID Viewer" width="100%">
+  <img src="https://raw.githubusercontent.com/anir0y/sentinel-dlp/main/assets/hid_viewer.svg" alt="HID Viewer" width="100%">
 </p>
 <p align="center"><em>HID Viewer — scan and fingerprint USB HID devices, detect potential BadUSB</em></p>
 
 <p align="center">
-  <img src="https://raw.githubusercontent.com/anir0y/dlp-tui/main/assets/network_monitor.svg" alt="Network Monitor" width="100%">
+  <img src="https://raw.githubusercontent.com/anir0y/sentinel-dlp/main/assets/network_monitor.svg" alt="Network Monitor" width="100%">
 </p>
 <p align="center"><em>Network Monitor — track upload volume per interface, alert on threshold breaches</em></p>
 
@@ -84,26 +84,27 @@ Runs on <strong>macOS</strong>, <strong>Windows</strong>, and <strong>Linux</str
 ## Installation
 
 ```bash
-# Clone and set up a virtualenv
-git clone <repo-url> && cd dlp-tui
-python -m venv .venv && source .venv/bin/activate  # macOS/Linux
+pip install sentinel-dlp
+
+# Or from source
+git clone https://github.com/anir0y/sentinel-dlp.git && cd sentinel-dlp
 pip install -e .
 
 # Windows extras (pywin32 + wmi)
-pip install -e .[windows]
+pip install sentinel-dlp[windows]
 ```
 
 ## Usage
 
 ```bash
-# Run the TUI
-dlp
+# Run Sentinel DLP
+sentinel
 
 # Or via module
 python -m dlp
 
 # Dry-run mode (no system changes)
-dlp --dry-run
+sentinel --dry-run
 ```
 
 > Some features require elevated privileges (e.g. USB blocking needs `sudo` on macOS/Linux or Administrator on Windows).
@@ -141,4 +142,4 @@ src/dlp/
 
 ## License
 
-See [pyproject.toml](pyproject.toml) for package metadata.
+MIT — see [LICENSE](LICENSE).

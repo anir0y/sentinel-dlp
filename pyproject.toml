@@ -3,16 +3,16 @@ requires = ["hatchling"]
 build-backend = "hatchling.build"
 
 [project]
-name = "dlp-tui"
-version = "0.1.4"
-description = "Terminal-based Data Loss Prevention control panel — monitor USB, HID, network, Bluetooth, clipboard, and file activity from a keyboard-driven TUI"
+name = "sentinel-dlp"
+version = "0.1.0"
+description = "Terminal-based Data Loss Prevention control panel — monitor USB, HID, network, Bluetooth, clipboard, and file activity from a keyboard-driven interface"
 readme = "README.md"
 license = "MIT"
 requires-python = ">=3.10"
 authors = [
     { name = "anir0y" },
 ]
-keywords = ["dlp", "data-loss-prevention", "tui", "usb", "security", "textual"]
+keywords = ["dlp", "data-loss-prevention", "sentinel", "usb", "security", "textual"]
 classifiers = [
     "Development Status :: 3 - Alpha",
     "Environment :: Console",
@@ -41,9 +41,9 @@ dependencies = [
 ]
 
 [project.urls]
-Homepage = "https://github.com/anir0y/dlp-tui"
-Repository = "https://github.com/anir0y/dlp-tui"
-Issues = "https://github.com/anir0y/dlp-tui/issues"
+Homepage = "https://github.com/anir0y/sentinel-dlp"
+Repository = "https://github.com/anir0y/sentinel-dlp"
+Issues = "https://github.com/anir0y/sentinel-dlp/issues"
 
 [project.optional-dependencies]
 windows = ["pywin32", "wmi"]
@@ -55,7 +55,8 @@ dev = [
 ]
 
 [project.scripts]
-dlp = "dlp.__main__:main"
+sentinel = "dlp.__main__:main"
+sentinel-dlp = "dlp.__main__:main"
 
 [tool.hatch.build.targets.wheel]
 packages = ["src/dlp"]
