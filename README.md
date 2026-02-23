@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="https://raw.githubusercontent.com/anir0y/dlp-tui/e02ec2b/assets/logo.png" alt="dlp-tui logo" width="160">
+  <img src="https://raw.githubusercontent.com/anir0y/dlp-tui/main/assets/logo.svg" alt="dlp-tui logo" width="160">
 </p>
 
 <h1 align="center">dlp-tui</h1>
@@ -22,22 +22,22 @@ Runs on <strong>macOS</strong>, <strong>Windows</strong>, and <strong>Linux</str
 ## Screenshots
 
 <p align="center">
-  <img src="https://raw.githubusercontent.com/anir0y/dlp-tui/e02ec2b/assets/dashboard.png" alt="Dashboard" width="100%">
+  <img src="https://raw.githubusercontent.com/anir0y/dlp-tui/main/assets/dashboard.svg" alt="Dashboard" width="100%">
 </p>
 <p align="center"><em>Dashboard — status overview with USB, whitelist, HID, and program policy cards</em></p>
 
 <p align="center">
-  <img src="https://raw.githubusercontent.com/anir0y/dlp-tui/e02ec2b/assets/usb_manager.png" alt="USB Manager" width="100%">
+  <img src="https://raw.githubusercontent.com/anir0y/dlp-tui/main/assets/usb_manager.svg" alt="USB Manager" width="100%">
 </p>
 <p align="center"><em>USB Manager — block/unblock mass storage, manage device whitelist</em></p>
 
 <p align="center">
-  <img src="https://raw.githubusercontent.com/anir0y/dlp-tui/e02ec2b/assets/hid_viewer.png" alt="HID Viewer" width="100%">
+  <img src="https://raw.githubusercontent.com/anir0y/dlp-tui/main/assets/hid_viewer.svg" alt="HID Viewer" width="100%">
 </p>
 <p align="center"><em>HID Viewer — scan and fingerprint USB HID devices, detect potential BadUSB</em></p>
 
 <p align="center">
-  <img src="https://raw.githubusercontent.com/anir0y/dlp-tui/e02ec2b/assets/network_monitor.png" alt="Network Monitor" width="100%">
+  <img src="https://raw.githubusercontent.com/anir0y/dlp-tui/main/assets/network_monitor.svg" alt="Network Monitor" width="100%">
 </p>
 <p align="center"><em>Network Monitor — track upload volume per interface, alert on threshold breaches</em></p>
 

@@ -4,7 +4,7 @@ build-backend = "hatchling.build"
 
 [project]
 name = "dlp-tui"
-version = "0.1.3"
+version = "0.1.4"
 description = "Terminal-based Data Loss Prevention control panel — monitor USB, HID, network, Bluetooth, clipboard, and file activity from a keyboard-driven TUI"
 readme = "README.md"
 license = "MIT"
