@@ -1,28 +1,43 @@
-# dlp-tui
+<p align="center">
+  <img src="https://raw.githubusercontent.com/anir0y/dlp-tui/main/assets/logo.png" alt="dlp-tui logo" width="160">
+</p>
 
-A terminal-based Data Loss Prevention (DLP) control panel built with [Textual](https://github.com/Textualize/textual). Monitor, restrict, and audit data exfiltration vectors — USB storage, HID devices, network uploads, Bluetooth, clipboard, and file activity — from a single keyboard-driven TUI.
+<h1 align="center">dlp-tui</h1>
 
-Runs on **macOS**, **Windows**, and **Linux**. All destructive actions support dry-run mode, rollback, and structured audit logging.
+<p align="center">
+  <a href="https://pypi.org/project/dlp-tui/"><img src="https://img.shields.io/pypi/v/dlp-tui?color=blue" alt="PyPI"></a>
+  <a href="https://pypi.org/project/dlp-tui/"><img src="https://img.shields.io/pypi/pyversions/dlp-tui" alt="Python"></a>
+  <a href="https://github.com/anir0y/dlp-tui/blob/main/LICENSE"><img src="https://img.shields.io/pypi/l/dlp-tui" alt="License"></a>
+</p>
+
+<p align="center">
+A terminal-based Data Loss Prevention (DLP) control panel built with <a href="https://github.com/Textualize/textual">Textual</a>.<br>
+Monitor, restrict, and audit data exfiltration vectors — USB storage, HID devices, network uploads, Bluetooth, clipboard, and file activity — from a single keyboard-driven TUI.
+</p>
+
+<p align="center">
+Runs on <strong>macOS</strong>, <strong>Windows</strong>, and <strong>Linux</strong>. All destructive actions support dry-run mode, rollback, and structured audit logging.
+</p>
 
 ## Screenshots
 
 <p align="center">
-  <img src="assets/dashboard.svg" alt="Dashboard" width="100%">
+  <img src="https://raw.githubusercontent.com/anir0y/dlp-tui/main/assets/dashboard.png" alt="Dashboard" width="100%">
 </p>
 <p align="center"><em>Dashboard — status overview with USB, whitelist, HID, and program policy cards</em></p>
 
 <p align="center">
-  <img src="assets/usb_manager.svg" alt="USB Manager" width="100%">
+  <img src="https://raw.githubusercontent.com/anir0y/dlp-tui/main/assets/usb_manager.png" alt="USB Manager" width="100%">
 </p>
 <p align="center"><em>USB Manager — block/unblock mass storage, manage device whitelist</em></p>
 
 <p align="center">
-  <img src="assets/hid_viewer.svg" alt="HID Viewer" width="100%">
+  <img src="https://raw.githubusercontent.com/anir0y/dlp-tui/main/assets/hid_viewer.png" alt="HID Viewer" width="100%">
 </p>
 <p align="center"><em>HID Viewer — scan and fingerprint USB HID devices, detect potential BadUSB</em></p>
 
 <p align="center">
-  <img src="assets/network_monitor.svg" alt="Network Monitor" width="100%">
+  <img src="https://raw.githubusercontent.com/anir0y/dlp-tui/main/assets/network_monitor.png" alt="Network Monitor" width="100%">
 </p>
 <p align="center"><em>Network Monitor — track upload volume per interface, alert on threshold breaches</em></p>
 

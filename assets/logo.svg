@@ -1,0 +1,44 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" fill="none">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#0f172a"/>
+      <stop offset="100%" stop-color="#1e293b"/>
+    </linearGradient>
+    <linearGradient id="shield" x1="0.5" y1="0" x2="0.5" y2="1">
+      <stop offset="0%" stop-color="#38bdf8"/>
+      <stop offset="100%" stop-color="#2563eb"/>
+    </linearGradient>
+    <linearGradient id="lock" x1="0.5" y1="0" x2="0.5" y2="1">
+      <stop offset="0%" stop-color="#f0f9ff"/>
+      <stop offset="100%" stop-color="#bae6fd"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Background rounded square -->
+  <rect width="512" height="512" rx="80" fill="url(#bg)"/>
+
+  <!-- Shield body -->
+  <path d="M256 72 L410 140 C410 140 420 320 256 440 C92 320 102 140 102 140 Z"
+        fill="url(#shield)" opacity="0.9"/>
+
+  <!-- Shield inner highlight -->
+  <path d="M256 100 L386 158 C386 158 394 310 256 412 C118 310 126 158 126 158 Z"
+        fill="none" stroke="#0f172a" stroke-width="4" opacity="0.3"/>
+
+  <!-- Terminal bracket >_ -->
+  <text x="256" y="295" text-anchor="middle" font-family="monospace, Courier New"
+        font-size="130" font-weight="bold" fill="url(#lock)">
+    &gt;_
+  </text>
+
+  <!-- Small lock icon on the shield top -->
+  <g transform="translate(256, 170)">
+    <!-- Lock body -->
+    <rect x="-18" y="-4" width="36" height="28" rx="4" fill="#f0f9ff"/>
+    <!-- Lock shackle -->
+    <path d="M-10 -4 L-10 -16 A10 10 0 0 1 10 -16 L10 -4"
+          fill="none" stroke="#f0f9ff" stroke-width="5" stroke-linecap="round"/>
+    <!-- Keyhole -->
+    <circle cx="0" cy="10" r="5" fill="#1e293b"/>
+  </g>
+</svg>

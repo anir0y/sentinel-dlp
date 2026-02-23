@@ -4,9 +4,33 @@ build-backend = "hatchling.build"
 
 [project]
 name = "dlp-tui"
-version = "0.1.0"
-description = "Data Loss Prevention TUI for Windows and macOS"
+version = "0.1.1"
+description = "Terminal-based Data Loss Prevention control panel — monitor USB, HID, network, Bluetooth, clipboard, and file activity from a keyboard-driven TUI"
+readme = "README.md"
+license = "MIT"
 requires-python = ">=3.10"
+authors = [
+    { name = "anir0y" },
+]
+keywords = ["dlp", "data-loss-prevention", "tui", "usb", "security", "textual"]
+classifiers = [
+    "Development Status :: 3 - Alpha",
+    "Environment :: Console",
+    "Intended Audience :: System Administrators",
+    "Intended Audience :: Information Technology",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: MacOS",
+    "Operating System :: Microsoft :: Windows",
+    "Operating System :: POSIX :: Linux",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Programming Language :: Python :: 3.13",
+    "Topic :: Security",
+    "Topic :: System :: Systems Administration",
+    "Typing :: Typed",
+]
 dependencies = [
     "textual>=1.0.0",
     "rich",
@@ -15,6 +39,11 @@ dependencies = [
     "psutil",
     "tomli_w",
 ]
+
+[project.urls]
+Homepage = "https://github.com/anir0y/dlp-tui"
+Repository = "https://github.com/anir0y/dlp-tui"
+Issues = "https://github.com/anir0y/dlp-tui/issues"
 
 [project.optional-dependencies]
 windows = ["pywin32", "wmi"]
